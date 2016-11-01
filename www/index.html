@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+</head>
+
+<body>
+
+    <div id="map"></div>
+    Ache em volta
+    <select onchange="getLocations();" id="tipo">
+      <option value="default">Selecione a localidade</option>
+      <option value="church">Igreja</option>
+      <option value="school">Escola</option>
+      <option value="train_station">Estação de trem</option>
+      <option value="food">Restaurante</option>
+    </select>
+    <br> distancia
+    <select onchange="getLocations();" id="dist">
+      <option value="100">100</option>
+      <option value="300">300</option>
+      <option value="500" selected>500</option>
+      <option value="1500">1500</option>
+      <option value="2500">2500</option>
+    </select> metros
+    <br>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWPGKAskWAZbPcJcMt7Bw6KOTnf7ArXB4&libraries=places"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
